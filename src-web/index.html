@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Rafał Mucha" />
+  <meta name="keywords"
+    content="Curriculum Vitae, CV, Rafał Mucha, Krakow, Web Development, IT, Finance, career timeline, job qualifications, resume">
+  <meta name="description" content="My CV as a website">
+  <link rel="icon" type="image/png" href="/me_ico.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV by Rafal Mucha</title>
+
+  <meta property="og:title" content="CV by Rafał Mucha" />
+  <meta property="og:image" content="https://rafal-mucha.pl/img/oglogo.png" />
+  <meta property="og:description" content="My CV and portfolio website, have fun!" />
+  <meta property='og:url' content='rafal-mucha.pl' />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="rafal-mucha.pl">
+  <meta property="twitter:url" content="https://rafal-mucha.pl/">
+  <meta name="twitter:title" content="CV by Rafał Mucha">
+  <meta name="twitter:description" content="My CV and portfolio website, have fun!">
+  <meta name="twitter:image" content="https://rafal-mucha.pl/img/oglogo.png">
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/devicon/devicon.min.css" rel="stylesheet">
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="/img/PWA_Icons/icon-72-72.png" />
+  <link rel="apple-touch-icon" href="/img/PWA_Icons/icon-96-96.png" />
+  <link rel="apple-touch-icon" href="/img/PWA_Icons/icon-144-144.png" />
+  <link rel="apple-touch-icon" href="/img/PWA_Icons/icon-192-192.png" />
+  <link rel="apple-touch-icon" href="/img/PWA_Icons/icon-512-512.png" />
+  <link rel="apple-touch-icon" href="/img/PWA_Icons/maskable_icon_x384.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#389bbd" />
+  <meta name="theme-color" content="#389bbd" />
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PJQ77SK');</script>
+  <!-- End Google Tag Manager -->
+  <link href="css/main-min.css" rel="stylesheet">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#sideNav" data-bs-offset="100" tabindex="0">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJQ77SK" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="loading-container">
+    <div id="loading-wrapper">
+      <div id="loading-text">LOADING</div>
+      <div id="loading-content"></div>
+    </div>
+  </div>
+  <!-- Modals start -->
+  <div class="modal fade bd-modal-lg" id="websiteModal" tabindex="-1" role="dialog" aria-labelledby="data-modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content site">
+        <button type="button" class="btn-close modalClose modalAddon" title="Close" data-bs-dismiss="modal"
+          aria-label="Close">
+        </button>
+        <a id="websiteModalAnchor" title="link_to_project" rel="noopener" href="#" class="siteLink modalAddon"
+          target="_blank"><img alt="icon" src="img/Link.png" class="floatImg sqr-20" /><span
+            class="actionBtnhint subheading">go to site</span></a>
+        <iframe id="websiteModalIframe" src="about:blank" class="site" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade bd-modal-lg" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="data-modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content"><button type="button" class="btn-close modal_close_modifirer" title="Close"
+          data-bs-dismiss="modal" aria-label="Close">
+        </button>
+        <img id="imageTag" alt="certificate" class="modImg" width="100%" src="img/img_placeholder.png" />
+      </div>
+    </div>
+  </div>
+  <div class="modal fade bd-modal-lg" id="chatForm" tabindex="-1" role="dialog" aria-labelledby="data-modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content container chatHolder mb-4">
+        <button type="button" class="btn-close modalClose modalAddon" title="Close" data-bs-dismiss="modal"
+          aria-label="Close">
+        </button>
+        <div class="modal-header">
+          <h2 class="modal-title chatHead">Contact me</h2>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12 mb-md-3 mb-sm-2 mb-xs-2">
+              <form id="contact-form" name="contact-form" netlify>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="md-form mb-3">
+                      <label for="name" class="formLabel">your name</label>
+                      <input type="text" id="name" name="name" class="form-control chatInput" placeholder="Elon Musk"
+                        autocomplete="name" required>
+
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="md-form mb-3">
+                      <label for="email" class="formLabel">your email</label>
+                      <input type="email" id="email" name="email" class="form-control chatInput"
+                        placeholder="elon@tesla.com" autocomplete="email" required>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form mb-3"><label for="subject" class="formLabel">subject</label>
+                      <input type="text" id="subject" name="subject" class="form-control chatInput"
+                        placeholder="Lead Engineer job offer" required>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form mb-4">
+                      <label for="message" class="formLabel">your&nbsp;message</label>
+                      <textarea type="text" id="message" name="message" rows="2"
+                        class="form-control md-textarea chatInput"
+                        placeholder="$1m/y | 100% HO | required good HTML & basic CSS"></textarea>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="text-end">
+                  <input id="form_clearer" type="button" value="CLEAR &#10006;" class="btn btn-secondary me-2" />
+                  <input type="submit" value="SEND &#10132;" class="btn btn-success" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade bd-modal-lg" id="bugForm" tabindex="-1" role="dialog" aria-labelledby="data-modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content container chatHolder mb-4">
+        <button type="button" class="btn-close modalClose modalAddon" title="Close" data-bs-dismiss="modal"
+          aria-label="Close">
+        </button>
+        <div class="modal-header">
+          <h2 class="modal-title chatHead">Report a bug</h2>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12 mb-md-3 mb-sm-2 mb-xs-2">
+              <form id="contact-form2" name="contact-form2" netlify>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="md-form mb-3"><label for="subject2" class="formLabel">subject</label>
+                      <input type="text" id="subject2" name="subject2" class="form-control chatInput" value="BUG REPORT"
+                        disabled>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="md-form mb-3">
+                      <label for="email2" class="formLabel">your email</label>
+                      <input type="email" id="email2" name="email2" class="form-control chatInput"
+                        placeholder="good_guy@gmail.com" autocomplete="email" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form mb-4">
+                      <label for="report" class="formLabel">your&nbsp;bug&nbsp;report</label>
+                      <textarea type="text" id="report" name="report" rows="2"
+                        class="form-control md-textarea chatInput"
+                        placeholder="Text overflow / broken link / scaling issue on mobile..."></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-end">
+                  <input id="form_clearer2" type="button" value="CLEAR &#10006;" class="btn btn-secondary me-2" />
+                  <input type="submit" value="REPORT &#10132;" class="btn btn-warning" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modals end -->
+  <a title="link" rel="noopener" href="/media/CV_Rafal_Mucha.pdf" id="actionBtn" class="floatBtn"
+    download="CV_Rafal_Mucha.pdf"><img alt="icon" src="img/DTray.png" class="floatImg sqr-25" /><span
+      class="actionBtnhint subheading">download my
+      cv</span></a>
+  <a data-bs-toggle="modal" data-bs-target="#chatForm" class="floatBtn" id="actionBtnChat"><img alt="icon"
+      src="img/chat.png" class="floatImg sqr-25" /><span class="actionBtnhint subheading">contact form</span></a>
+  <a data-bs-toggle="modal" data-bs-target="#bugForm" class="floatBtn" id="actionBtnBug"><img alt="icon"
+      src="img/Bug.png" class="floatImg sqr-25" /><span class="actionBtnhint subheading">report a
+      bug</span></a>
+  <a id="lightMode" class="floatBtn"><img alt="icon" src="img/Rebel.png" class="floatImg sqr-25" /><span
+      class="actionBtnhint subheading">light
+      mode</span></a>
+  <a id="darkMode" class="floatBtn"><img alt="icon" src="img/Empire.png" class="floatImg redGlowBtn" /><span
+      class="actionBtnhint subheading">dark mode</span></a>
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top ps-2 pe-2" id="sideNav">
+      <a class="navbar-brand" href="#page-top" title="Go back to page top">
+        <span class="d-block d-lg-none up-button"><i class="fa fa-arrow-circle-up fa-lg" aria-hidden="true"></i></span>
+        <span class="d-none d-lg-block">
+          <img alt="icon" class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#awards">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Footer</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 id="about_header" class="mb-0"><span id="HeaderName">Rafał</span>
+            <span class="text-primary">Mucha</span>
+          </h1>
+          <div class="subheading mb-5"><i class="fa fa-map-marker"></i> <a title="link"
+              id="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4400.156110345693!2d20.002538803666585!3d50.08093989726195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471645337160b089%3A0x84a5709cc373db92!2z8J-PoQ!5e0!3m2!1spl!2spl!4v1532419377895"
+              rel="noopener" href="#" data-bs-toggle="modal" data-bs-target="#websiteModal">Kraków</a>
+            · <i class="fa fa-user"></i> 1987 · <i class="fa fa-inbox"></i>
+            <a title="link" rel="noopener" href="mailto:r.p.mucha@gmail.com?subject=Response2CV&Body=Hello!">e-mail</a>
+          </div>
+          <h3 class="mb-1 subtitle">UI <span><i class="fa fa-caret-right" aria-hidden="true"></i></span> UX <span><i
+                class="fa fa-caret-right" aria-hidden="true"></i></span>
+            FrontEnd Development</h3>
+          <p class="mb-5 bio">Economics master's degree graduate and a
+            self-trained programmer, focused on Web
+            Development, UI, UX & mobile. People-oriented, eager to learn new
+            skills, proactive and keen on challenges.
+          </p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item flipLink" title="LinkedIn">
+              <a title="link" rel="noopener" href="https://www.linkedin.com/in/rafał-mucha-5b4a84110" target="_blank">
+                <span class="fa-stack fa-lg flip">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item flipLink" title="GitHub">
+              <a title="link" rel="noopener" href="https://github.com/RavMucha" target="_blank">
+                <span class="fa-stack fa-lg flip">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item flipLink" title="SoloLearn">
+              <a title="link" rel="noopener" href="https://www.sololearn.com/Profile/489871" target="_blank">
+                <span class="fa-stack fa-lg flip">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <img alt="icon" class="fa fa-stack-1x fa-inverse" src="/img/Solo.svg" />
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item flipLink" title="Figma">
+              <a title="link" rel="noopener" href="https://www.figma.com/@ravmucha" target="_blank">
+                <span class="fa-stack fa-lg flip">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <img alt="icon" class="fa fa-stack-1x fa-inverse" src="/img/fig.svg" />
+                </span>
+              </a>
+            </li>
+          </ul>
+          <div id="alert-container" class="container">
+            <div class="row">
+              <div id="infoAlert" class="col-9 alert alert-secondary alert-dismissible fade show inset" role="alert">
+                <h4 class="alert-heading">Searching for a <span class="text-info">downloadable</span> CV or want to
+                  <span class="text-form">contact</span> me?
+                </h4>
+                <p class="mb-0">No problemo! You'll find the download button
+                  in the lower-right corner.</p>
+                <p class="mb-0">There's also a contact form amongst those
+                  options.</p>
+                <br>
+                <p class="mb-0">...thou before U do, please
+                  <a id="https://dear-recruiter.netlify.app/#" class="recruiter-link " href="#" data-bs-toggle="modal"
+                    data-bs-target="#websiteModal">check
+                    this
+                    out!</a>
+                </p>
+                <button id="alert_closer" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                </button>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 id="experience_header" class="mb-5">Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Senior Software Developer</h3>
+              <div class="subheading mb-3">
+                <img src="img/CiscoSys.png" alt="company logo" class="flav_icon" /> CISCO Systems <u class="via">VIA</u>
+                Collabera
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Web development, maintenance,
+                  new features, testing and improvements using:
+                  <ul class="langList">
+                    <li>HTML, CSS, JavaScript, Bootstrap, jQuery,</li>
+                    <li>Vue.js, Angular, Angular Material,
+                      TypeScript,</li>
+                    <li>Python 3, Docker, Node.js, SQL</li>
+                  </ul>
+                </li>
+                <li class="list-group-item">Version control using
+                  <strong>Git, GitLab, GitHub</strong>
+                </li>
+                <li class="list-group-item">Working in
+                  <strong>Scrum</strong>, <strong>Figma</strong>
+                  designs &amp; prototyping
+                </li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">April 2022 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Senior Software Developer</h3>
+              <div class="subheading mb-3">
+                <img src="img/LUXOFT.png" alt="company logo" class="flav_icon" /> DXC Luxoft
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Web development, using:
+                  <ul class="langList">
+                    <li>HTML, CSS, JavaScript,</li>
+                    <li>Angular, Angular Material, TypeScript</li>
+                  </ul>
+                <li class="list-group-item">Version control using
+                  <strong>Git, GitHub, Jira</strong>
+                </li>
+                <li class="list-group-item">Working in
+                  <strong>Scrum</strong>, <strong>Figma</strong>
+                  designs &amp; prototyping
+                </li>
+                </li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">March 2022 - April 2022</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">FrontEnd UI Developer</h3>
+              <div class="subheading mb-3">
+                <img src="img/CiscoSys.png" alt="company logo" class="flav_icon" /> CISCO Systems <u class="via">VIA</u>
+                ZenSar
+                Technologies
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Web development, maintenance,
+                  new features, testing and improvements using:
+                  <ul class="langList">
+                    <li>HTML, CSS, JavaScript, Bootstrap, jQuery,</li>
+                    <li>React, Vue.js, Angular, Angular Material,
+                      TypeScript, SASS,</li>
+                    <li>Polymer, LitElement, Salesforce, Lightning Design
+                      System,</li>
+                    <li>Python 3, Docker, Node.js, MongoDB</li>
+                  </ul>
+                </li>
+                <li class="list-group-item">Version control using
+                  <strong>Git, GitLab, GitHub</strong>
+                </li>
+                <li class="list-group-item">Working in
+                  <strong>Scrum</strong>, <strong>Figma</strong>
+                  designs &amp; prototyping
+                </li>
+                <li class="list-group-item">Recruitment activities &amp;
+                  technical interviews
+                </li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">October 2020 - February 2022</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Experienced Software Engineer</h3>
+              <div class="subheading mb-3">
+                <img src="img/00.png" alt="company logo" class="flav_icon" /> GFT Poland Sp. z o.o.
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Web development, maintenance
+                  and improvements, administration, access
+                  control, FrontEnd & BackEnd maintenance using:
+                  <ul class="langList">
+                    <li>HTML, CSS, JavaScript,</li>
+                    <li>React, Vue.js, Bootstrap, jQuery,</li>
+                    <li>Angular, Angular Material,</li>
+                    <li>Node.js, Express, PostgreSQL, Docker,</li>
+                    <li>TypeScript, SASS</li>
+                  </ul>
+                </li>
+                <li class="list-group-item">Designing and implementation
+                  of solutions according to customer
+                  requirements, documentation of work and mentoring
+                </li>
+                <li class="list-group-item">Building modern Single Page
+                  Applications
+                </li>
+                <li class="list-group-item">Version control using
+                  <strong>Git, GitHub, GitLab</strong>
+                </li>
+                <li class="list-group-item">Working in
+                  <strong>Scrum</strong> methodology,
+                  <strong>Figma</strong>
+                  designs
+                </li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">February 2020 - October 2020</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Continuous Improvement Leader <span class="badge bg-secondary">Web Developer</span></h3>
+              <h4 class="mb-0 secHeading">Acting CI Leader till July
+                2019</h4>
+              <div class="subheading mb-3">
+                <img src="img/01.png" alt="company logo" class="flav_icon" /> Capgemini Polska Sp. z o.o.
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">E2E web development,
+                  maintenance and improvements, administration, access
+                  control, FrontEnd & BackEnd maintenance using:
+                  <strong>HTML, CSS, SASS, SVG, Bootstrap, JavaScript,
+                    jQuery, ASP.NET, C#, Chart APIs, MS SQL, MS
+                    SharePoints, VBS, VBA, React, TypeScript</strong>
+                </li>
+                <li class="list-group-item">Automations & RPA/robotics
+                  consultancy
+                </li>
+                <li class="list-group-item">Automations (Excel, macros,
+                  scripting solutions) design & implementation
+                </li>
+                <li class="list-group-item">Business Intelligence
+                  Dashboard reporting
+                </li>
+                <li class="list-group-item">SharePoint administration and
+                  maintenance via SharePoint Designer
+                </li>
+                <li class="list-group-item">Support engagements in
+                  identifying CI opportunities
+                </li>
+                <li class="list-group-item">Driving Continuous Improvement
+                  projects to achieve overall objectives of the
+                  Organization and engagement
+                </li>
+                <li class="list-group-item">Promoting continuous
+                  improvement methodology
+                </li>
+                <li class="list-group-item">Generating demand for
+                  automation (through different tools and focus
+                  workshops)
+                </li>
+                <li class="list-group-item">Sharing knowledge and
+                  awareness proactively
+                </li>
+                <li class="list-group-item">Provide training and knowledge
+                  sharing to the business
+                </li>
+              </ul>
+              <br />
+              <span class="badge bg-primary additional-badge">Additionally:</span>
+              <p class="additional-info"><b>Web Development basics
+                  trainer</b> <span class="font-9">(conducting
+                  trainings for
+                  employees on the basics of FrontEnd development -
+                  HTML5, CSS3, JavaScript (ES5 & ES6), jQuery, Bootstrap &
+                  SharePoints as servers)</span></p>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">February 2019 - January 2020</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Command Center Senior Analyst <span class="badge bg-secondary">Web Developer</span></h3>
+              <div class="subheading mb-3">
+                <img src="img/01.png" alt="company logo" class="flav_icon" /> Capgemini Polska Sp. z o.o.
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Active website development,
+                  maintenance and improvements (<strong>HTML, CSS,
+                    JavaScript, jQuery, ASP.NET, Bootstrap, Google
+                    Charts</strong>), administration, access control,
+                  FrontEnd & some occasional BackEnd maintenance
+                </li>
+                <li class="list-group-item">Preparation of daily/monthly
+                  reports in MS Excel
+                </li>
+                <li class="list-group-item">Preparation of monthly
+                  dashboards in SAP BusinessObjects & MS Power BI
+                </li>
+                <li class="list-group-item">Preparation of monthly service
+                  review PPT decks
+                </li>
+                <li class="list-group-item">General IT support for Citrix,
+                  Cisco telephony, VPN, Office Suite software,
+                  ERPs, server issues,
+                  ticketing on ServiceNOW, BMC Remedy and various ITSM
+                  systems
+                </li>
+                <li class="list-group-item">Calculation of process metrics
+                  data based on agreed definitions
+                </li>
+                <li class="list-group-item">Data collection plan control
+                </li>
+                <li class="list-group-item">SharePoint administration and
+                  maintenance via SharePoint Designer
+                </li>
+                <li class="list-group-item">Coordination with engagement
+                  team in getting data
+                </li>
+                <li class="list-group-item">Updating required process
+                  documentation (procedures) and other documentation
+                  within agreed
+                  timeframes
+                </li>
+                <li class="list-group-item">Creation of project plans
+                </li>
+                <li class="list-group-item">Coordination of MS SQL
+                  database structure creation
+                </li>
+                <li class="list-group-item">Integration of data and
+                  information
+                </li>
+                <li class="list-group-item">Implementation of interfaces
+                  for data input and data output
+                </li>
+                <li class="list-group-item">Enhancements of service
+                  reporting tool sets</li>
+              </ul>
+              <br />
+              <span class="badge bg-primary additional-badge">Additionally:</span>
+              <p class="additional-info"><b>Risk & Compliance
+                  Coordinator</b> <span class="font-9">(auditing,
+                  creation, preparation
+                  and updates of a BCP, R&C logs,
+                  operational and Disaster Recovery-related
+                  documentation)</span></p>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">July 2017 - February 2019</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Finance Service Specialist for General
+                Accounting <span class="badge bg-secondary">General Ledger
+                  Reporting</span></h3>
+              <div class="subheading mb-3">
+                <img src="img/02.png" alt="company logo" class="small-icon-std" /> ABB Global Business Services
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Performing general accounting
+                  activities</li>
+                <li class="list-group-item">Execution of assigned
+                  accounting analyses and reports</li>
+                <li class="list-group-item">Ensuring the production of
+                  reports, statement of accounts, reconciliations,
+                  statements of sourcing and application of funds (SAP FI,
+                  Excel, Oracle HFM, ServiceNOW)</li>
+                <li class="list-group-item">Conduction of investigations
+                  and reconciliations of accounts</li>
+                <li class="list-group-item">Application of accounting
+                  techniques and standard practices to the
+                  classification and recording of financial
+                  transactions</li>
+                <li class="list-group-item">Participation in internal
+                  control testing and preparation of relevant
+                  documentation</li>
+                <li class="list-group-item">Support of management with
+                  financial aspects of project funding and risk
+                  assessment</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">March 2017 - July 2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Junior Accountant <span class="badge bg-secondary">General Ledger</span></h3>
+              <div class="subheading mb-3">
+                <img src="img/03.png" alt="company logo" class="small-icon-std" /> Capita (Polska) Sp. z o.o.
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">SAP system & Desktop
+                  Housekeeping</li>
+                <li class="list-group-item">Month end journal
+                  processing</li>
+                <li class="list-group-item">Timesheet and Expenses
+                  Administration, including issuing missing timesheet
+                  reports and chasing missing timesheets</li>
+                <li class="list-group-item">Setup of new projects in line
+                  with approved PIDs or WSAs, including input of
+                  initial income & expenditure forecasts</li>
+                <li class="list-group-item">Assistance with the
+                  updating/maintenance of project forecasts in liaison
+                  with Project Managers</li>
+                <li class="list-group-item">Invoice Processing (Accounts
+                  receivable and payable)</li>
+                <li class="list-group-item">Assistance with Co-ordination
+                  of Annual Business Plan and monthly forecasts
+                </li>
+                <li class="list-group-item">Processing and facilitating
+                  timely approval of supplier invoices</li>
+                <li class="list-group-item">Creating Purchase Orders and
+                  adminstration of the end to end PO process</li>
+                <li class="list-group-item">Generating various financial
+                  and timesheet reports in SAP to Excel</li>
+                <li class="list-group-item">SalesForce Opportunities
+                  creation, maintenance and revenue scheduling</li>
+              </ul>
+              <br />
+              <span class="badge bg-primary additional-badge">Additionally:</span>
+              <ul class="additional-list">
+                <li>Lead trainer of accounting and bookkeeping
+                  basics,</li>
+                <li>Head of the office's Social Fund Committee,</li>
+                <li>Member of the office's Charity Team.</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">July 2016 - February 2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Junior <span><img alt="icon" src="img/09.png" /></span> Application Support
+                Specialist
+              </h3>
+              <div class="subheading mb-3">
+                <img src="img/03.png" alt="company logo" class="small-icon-std" /> Capita (Polska) Sp. z o.o.
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Resolving access related
+                  reqests via SAP within agreed SLAs</li>
+                <li class="list-group-item">Test system changes and
+                  upgrades</li>
+                <li class="list-group-item">First line support for
+                  internal customers (via mail and phone)</li>
+                <li class="list-group-item">Performing system
+                  administration tasks</li>
+                <li class="list-group-item">Solving complex issues related
+                  to customers' queries</li>
+              </ul>
+              <br />
+              <span class="badge bg-primary additional-badge">Additionally:</span>
+              <ul class="additional-list">
+                <li>Lead trainer of accounting and bookkeeping
+                  basics,</li>
+                <li>Head of the office's Social Fund Committee,</li>
+                <li>Member of the office's Charity Team,</li>
+                <li>Supporting recruitment (screening candidates), project
+                  management, internal marketing, maintenance
+                  and updates of a database of employees in MS
+                  Access.</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">March 2016 - July 2016</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">IT Service Desk Analyst</h3>
+              <div class="subheading mb-3">
+                <img src="img/03.png" alt="company logo" class="small-icon-std" /> Capita (Polska) Sp. z o.o.
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Responding to incoming
+                  requests made via a variety of channels (email, web,
+                  voice), against thresholds in line with the contracted
+                  SLAs</li>
+                <li class="list-group-item">Logging (via Hornbill
+                  SupportWorks and BMC Remedy), categorising and
+                  prioritising all 1st level calls according to the agreed
+                  SLA</li>
+                <li class="list-group-item">First Time Fix calls where
+                  appropriate via LANDesk, remote access and admin
+                  consoles</li>
+                <li class="list-group-item">Active Directory user and
+                  domain maintenance</li>
+                <li class="list-group-item">Monitoring of servers</li>
+                <li class="list-group-item">Resolving tickets relating to
+                  AD group accesses, new starter and leaver
+                  requests, issues with MVS telephony, servers, Exchange,
+                  Sharepoint and MS Office, CRM plug-ins, Remote
+                  Desktop Software, Cisco VPN, WebEx and proprietary
+                  corporate software</li>
+              </ul>
+              <br />
+              <span class="badge bg-primary additional-badge">Additionally:</span>
+              <ul class="additional-list">
+                <li>Lead trainer of accounting and bookkeeping basics</li>
+                <li>Head of the office's Social Fund Committee</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">August 2015 - March 2016 <span class="badge bg-dark">Contract
+                  ended</span></span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Data Administrator</h3>
+              <div class="subheading mb-3">
+                <img src="img/03.png" alt="company logo" class="small-icon-std" /> Capita (Polska) Sp. z o.o.
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Handling and processing data
+                  supplied by the customer, expert and/or
+                  provider ensuring the data is accurately input and
+                  complete in the CRM system and Excel spreadsheet
+                  database</li>
+                <li class="list-group-item">Keeping case notes up to date,
+                  concise and relevant to ensure colleagues can
+                  interpret correctly and actions are clear</li>
+                <li class="list-group-item">Making outbound calling,
+                  chasing medical providers for medical records</li>
+                <li class="list-group-item">Operating within own area of
+                  accountability, proactively escalating critical
+                  points that may affect a case and act upon them in a
+                  timely manner to resolve</li>
+                <li class="list-group-item">Achieve targets for quality
+                  and utilisation including Service Standards and
+                  applying the Data Protection Act precautions</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">July 2015 <span class="badge bg-dark">Contract
+                  ended</span></span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Customer Advisor</h3>
+              <div class="subheading mb-3">
+                <img src="img/04.png" alt="company logo" class="flav_icon" /> PLAY
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Customer service in a PLAY
+                  carrier store, calling clients, cash handling ,
+                  sales of network services.</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">December 2014 - April 2015</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Telephone consultant | Transcription Process
+                Lead</h3>
+              <div class="subheading mb-3">
+                <img src="img/05.png" alt="company logo" class="small-icon-std" /> Medicover Sp. z o.o.
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Telephone customer service in
+                  Polish and English</li>
+                <li class="list-group-item">Training new joiners</li>
+                <li class="list-group-item">Transcription of phone
+                  calls</li>
+                <li class="list-group-item">Supervisory of work in a team
+                  of 4 staff as team leader of a special side
+                  project lasting 3 months.</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">July 2011 - June 2014</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Manager | web-based business owner</h3>
+              <div class="subheading mb-3">
+                <img src="img/06.png" alt="company logo" class="flav_icon" /> Academic Incubators of
+                Entrepreneurship
+              </div>
+              <p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Management of a startup
+                  business, invoicing, contacting clients, sales of
+                  advertising space, website administration (HTML,
+                  phpBB).</li>
+                <li class="list-group-item">Employed and managed the work
+                  of up to 15 contractors.</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">April 2011 - October 2012</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 id="education_header" class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-1 edu">
+                <img src="img/11_AGH.png" alt="AGH logo" class="university-icon" /> AGH University of
+                Science and Technology in
+                Kraków
+              </h3>
+              <div class="subheading mb-3">Postgraduate degree</div>
+              <div class="subheading mb-5">Web Application Programming <span
+                  class="badge rounded-pill bg-light text-dark">Part
+                  time</span>
+              </div>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">October 2022 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-1 edu">
+                <img src="img/08.png" alt="UJK logo" class="university-icon" /> Jan Kochanowski University
+                in Kielce
+              </h3>
+              <div class="subheading mb-3">Master's degree</div>
+              <div class="subheading mb-5">Economics <span class="badge rounded-pill bg-light text-dark">Full
+                  time</span>
+                <p><span class="badge bg-dark">Specialty:</span> Economics
+                  of industry and services
+                  <br />
+                  <span class="badge bg-dark">Activities and
+                    Societies:</span>
+                  Group's foreman
+                </p>
+              </div>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">October 2012 - September
+                2014</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-1 edu">
+                <img src="img/08.png" alt="UJK logo" class="university-icon" /> Jan Kochanowski University
+                in Kielce
+              </h3>
+              <div class="subheading mb-3">Bachelor's degree</div>
+              <div class="subheading mb-5">Economics <span class="badge rounded-pill bg-light text-dark">Full
+                  time</span>
+                <p><span class="badge bg-dark">Specialty:</span> Economics
+                  of finance and banking
+                  <br />
+                  <span class="badge bg-dark">Activities and
+                    Societies:</span>
+                  Group's foreman
+                </p>
+              </div>
+            </div>
+            <div class="resume-date text-end">
+              <span class="text-primary">October 2009 - September
+                2012</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 id="skills_header" class="mb-5">Skills</h2>
+          <div class="subheading mb-3">Example projects &amp;
+            Work</div>
+          <p class="skills-container mb-4"><b class="pointer-arrows">&#10097;&#10097;</b>
+            I've built a bunch of big, corporate apps using <i>React</i>,
+            <i>Vue</i>,
+            <i>Angular</i>, <i>Lit</i>, <i>ASP.NET</i>, <i>Bootstrap</i> and
+            other technologies over the years - mostly
+            for internal use or installable, therefore not linkable. Below
+            is what I can show.
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <div class="card">
+              <img src="/img/Card_Images/RAD.png" class="card-img-top" alt="website image">
+              <div class="card-body">
+                <h5 class="card-title">RADKit promotional page</h5>
+                <p class="card-text">A static landing pane for the Cisco
+                  RADKit SDK, a PWA made with pute HTML, CSS,
+                  JavaScript and an inhouse component library.</p>
+                <div class="icon_container"><i class="devicon devicon-html5-plain"></i>
+                  <i class="devicon devicon-css3-plain"></i>
+                  <i class="devicon devicon-javascript-plain"></i>
+                  <i class="devicon devicon-docker-plain"></i>
+                  <i class="devicon devicon-git-plain"></i>
+                  <i class="devicon devicon-gitlab-plain"></i><i class="devicon devicon-figma-plain"></i>
+                </div>
+              </div><a rel="noopener" href="https://radkit.cisco.com/" target="_blank" class="btn btn-secondary m-3"><i
+                  class="fa fa-link" aria-hidden="true"></i>&nbsp;&nbsp;Go
+                to
+                link</a>
+            </div>
+            <div class="card">
+              <img src="/img/Card_Images/TB.png" class="card-img-top" alt="website image">
+              <div class="card-body">
+                <h5 class="card-title">Tranquility Base DaC</h5>
+                <p class="card-text">The Tranquility Base GitHub repo – an
+                  open source, multi-cloud Datacenter as Code
+                  platform. I was part of the Angular FrontEnd team.</p>
+                <div class="icon_container"><i class="devicon devicon-html5-plain"></i>
+                  <i class="devicon devicon-css3-plain"></i>
+                  <i class="devicon devicon-javascript-plain"></i>
+                  <i class="devicon devicon-angularjs-plain"></i>
+                  <i class="devicon devicon-typescript-plain"></i>
+                  <i class="devicon devicon-nodejs-plain"></i>
+                  <i class="devicon devicon-npm-original-wordmark"></i>
+                  <i class="devicon devicon-postgresql-plain"></i>
+                  <i class="devicon devicon-docker-plain"></i>
+                  <i class="devicon devicon-python-plain" title="Python"></i>
+                  <i class="devicon devicon-mongodb-plain-wordmark" title="MongoDB"></i>
+                  <i class="devicon devicon-git-plain"></i>
+                  <i class="devicon devicon-github-plain"></i>
+                </div>
+              </div><a rel="noopener" href="https://github.com/tranquilitybase-io" target="_blank"
+                class="btn btn-secondary m-3"><i class="fa fa-link" aria-hidden="true"></i>&nbsp;&nbsp;Go
+                to
+                link</a>
+            </div>
+            <div class="card">
+              <img src="/img/Card_Images/Resume.png" class="card-img-top" alt="website image">
+              <div class="card-body">
+                <h5 class="card-title">Web Portfolio</h5>
+                <p class="card-text">My first big project in old Bootstrap.
+                  Since then upgaraded to v5, dropped jQuery
+                  and turned into a PWA.</p>
+                <div class="icon_container"><i class="devicon devicon-html5-plain"></i>
+                  <i class="devicon devicon-css3-plain"></i>
+                  <i class="devicon devicon-javascript-plain"></i>
+                  <i class="devicon devicon-bootstrap-plain"></i>
+                  <i class="devicon devicon-git-plain"></i>
+                  <i class="devicon devicon-github-plain"></i>
+                  <i class="devicon devicon-figma-plain"></i>
+                </div>
+              </div><button type="button" data-bs-toggle="modal" id="https://rafal-mucha.pl/"
+                data-bs-target="#websiteModal" class="btn btn-danger   m-3"><i class="fa fa-bullseye"
+                  aria-hidden="true"></i>&nbsp;&nbsp;Initialize
+                Inception</button>
+            </div>
+            <div class="card">
+              <img src="/img/Card_Images/Dear.png" class="card-img-top" alt="website image">
+              <div class="card-body">
+                <h5 class="card-title">GSAP info page</h5>
+                <p class="card-text">Info page for recruiters, made using
+                  the GreenSock GSAP JavaScript animation
+                  platform.</p>
+                <div class="icon_container"><i class="devicon devicon-html5-plain"></i>
+                  <i class="devicon devicon-css3-plain"></i>
+                  <i class="devicon devicon-javascript-plain"></i>
+                  <i class="devicon devicon-git-plain"></i>
+                  <i class="devicon devicon-github-plain"></i>
+                  <img alt="icon" src="/img/gsap.svg" alt="GSAP" /><i class="devicon devicon-figma-plain"></i>
+                </div>
+              </div><button type="button" data-bs-toggle="modal" id="https://dear-recruiter.netlify.app/"
+                data-bs-target="#websiteModal" class="btn btn-dark  m-3"><i class="fa fa-external-link"
+                  aria-hidden="true"></i>&nbsp;&nbsp;See
+                Project</button>
+            </div>
+            <div class="card">
+              <img src="/img/Card_Images/Converter.png" class="card-img-top" alt="website image">
+              <div class="card-body">
+                <h5 class="card-title">Vue converter</h5>
+                <p class="card-text">A responsive unit converter PWA project
+                  that I've made using Vue.js.</p>
+                <div class="icon_container"><i class="devicon devicon-html5-plain"></i>
+                  <i class="devicon devicon-css3-plain"></i>
+                  <i class="devicon devicon-javascript-plain"></i>
+                  <i class="devicon devicon-vuejs-plain"></i>
+                  <i class="devicon devicon-git-plain"></i>
+                  <i class="devicon devicon-github-plain"></i><i class="devicon devicon-figma-plain"></i>
+
+                </div>
+              </div><button type="button" data-bs-toggle="modal" id="https://v-convert.netlify.app/"
+                data-bs-target="#websiteModal" class="btn btn-dark  m-3"><i class="fa fa-external-link"
+                  aria-hidden="true"></i>&nbsp;&nbsp;See
+                Project</button>
+            </div>
+            <div class="card">
+              <img src="/img/Card_Images/Portfolio.png" class="card-img-top" alt="website image">
+              <div class="card-body">
+                <h5 class="card-title">Web CV</h5>
+                <p class="card-text">Materialize component library test
+                  project - an interactive CV with a lot of secret
+                  easter eggs.</p>
+                <div class="icon_container"><i class="devicon devicon-html5-plain"></i>
+                  <i class="devicon devicon-css3-plain"></i>
+                  <i class="devicon devicon-javascript-plain"></i>
+                  <i class="devicon devicon-jquery-plain"></i>
+                  <i class="devicon devicon-git-plain"></i>
+                  <i class="devicon devicon-github-plain"></i>
+                  <img alt="icon" src="/img/materialize.svg" alt="Materialize" />
+                </div>
+              </div><button type="button" data-bs-toggle="modal" id="https://ravmucha.netlify.app/"
+                data-bs-target="#websiteModal" class="btn btn-dark  m-3"><i class="fa fa-external-link"
+                  aria-hidden="true"></i>&nbsp;&nbsp;See
+                Project</button>
+            </div>
+            <div class="card">
+              <img src="/img/Card_Images/XO.png" class="card-img-top" alt="website image">
+              <div class="card-body">
+                <h5 class="card-title">Tic Tac Toe</h5>
+                <p class="card-text">A FrontEnd only Tic Tac Toe game made
+                  with React.js and using web storage as
+                  memory.</p>
+                <div class="icon_container"><i class="devicon devicon-html5-plain"></i>
+                  <i class="devicon devicon-css3-plain"></i>
+                  <i class="devicon devicon-javascript-plain"></i>
+                  <i class="devicon devicon-react-plain"></i>
+                  <i class="devicon devicon-nodejs-plain"></i>
+                  <i class="devicon devicon-npm-original-wordmark"></i>
+                  <i class="devicon devicon-git-plain"></i>
+                  <i class="devicon devicon-github-plain"></i>
+
+                </div>
+              </div><button type="button" data-bs-toggle="modal" id="https://gta-xo.netlify.app/"
+                data-bs-target="#websiteModal" class="btn btn-dark  m-3"><i class="fa fa-external-link"
+                  aria-hidden="true"></i>&nbsp;&nbsp;See
+                Project</button>
+            </div>
+
+            <div class="card">
+              <img src="/img/Card_Images/Card.png" class="card-img-top" alt="website image">
+              <div class="card-body">
+                <h5 class="card-title">Business Card</h5>
+                <p class="card-text">A basic business card landing page,
+                  made to test RWD and some CSS transitions.</p>
+                <div class="icon_container"><i class="devicon devicon-html5-plain"></i>
+                  <i class="devicon devicon-css3-plain"></i>
+                  <i class="devicon devicon-git-plain"></i>
+                  <i class="devicon devicon-github-plain"></i><i class="devicon devicon-figma-plain"></i>
+                </div>
+              </div><button type="button" data-bs-toggle="modal" id="https://ref-card.netlify.app/"
+                data-bs-target="#websiteModal" class="btn btn-dark  m-3"><i class="fa fa-external-link"
+                  aria-hidden="true"></i>&nbsp;&nbsp;See
+                Project</butto>
+            </div>
+            <div class="card">
+              <img src="/img/Card_Images/Liczy.png" class="card-img-top" alt="website image">
+              <div class="card-body">
+                <h5 class="card-title">Multiplication board</h5>
+                <p class="card-text">An interactive PWA multiplication board
+                  that I've made for my daughter using
+                  jQuery.</p>
+                <div class="icon_container"><i class="devicon devicon-html5-plain"></i>
+                  <i class="devicon devicon-css3-plain"></i>
+                  <i class="devicon devicon-javascript-plain"></i>
+                  <i class="devicon devicon-jquery-plain"></i>
+                  <i class="devicon devicon-git-plain"></i>
+                  <i class="devicon devicon-github-plain"></i>
+                </div>
+              </div><button type="button" data-bs-toggle="modal" id="https://madzia-liczy.netlify.app/"
+                data-bs-target="#websiteModal" class="btn btn-dark  m-3"><i class="fa fa-external-link"
+                  aria-hidden="true"></i>&nbsp;&nbsp;See
+                Project</button>
+            </div>
+            <div class="card">
+              <img src="/img/Card_Images/Coin.png" class="card-img-top" alt="website image">
+              <div class="card-body">
+                <h5 class="card-title">Coin Flipper Game</h5>
+                <p class="card-text">A Coin Flipper PWA game made to test
+                  NES.css, a pixel-based retro themed CSS
+                  component library.</p>
+                <div class="icon_container"><i class="devicon devicon-html5-plain"></i>
+                  <i class="devicon devicon-css3-plain"></i>
+                  <i class="devicon devicon-javascript-plain"></i>
+                  <i class="devicon devicon-git-plain"></i>
+                  <i class="devicon devicon-github-plain"></i>
+
+                </div>
+              </div><button id="https://nes-coins.netlify.app/" data-bs-target="#websiteModal" type="button"
+                data-bs-toggle="modal" class="btn btn-dark  m-3"><i class="fa fa-external-link"
+                  aria-hidden="true"></i>&nbsp;&nbsp;See
+                Project</button>
+            </div>
+            <div class="card">
+              <img src="/img/Card_Images/Splash.png" class="card-img-top" alt="website image">
+              <div class="card-body">
+                <h5 class="card-title">Video Splash Screen</h5>
+                <p class="card-text">An example video splash screen project
+                  with a hamburger menu and a background
+                  rotator.</p>
+                <div class="icon_container"><i class="devicon devicon-html5-plain"></i>
+                  <i class="devicon devicon-css3-plain"></i>
+                  <i class="devicon devicon-javascript-plain"></i>
+                  <i class="devicon devicon-git-plain"></i>
+                  <i class="devicon devicon-github-plain"></i>
+                </div>
+              </div><button type="button" data-bs-toggle="modal" id="https://fly-landing.netlify.app/"
+                data-bs-target="#websiteModal" class="btn btn-dark  m-3"><i class="fa fa-external-link"
+                  aria-hidden="true"></i>&nbsp;&nbsp;See
+                Project</button>
+            </div>
+            <div class="card">
+              <img src="/img/Card_Images/Figma.png" class="card-img-top" alt="website image">
+              <div class="card-body">
+                <h5 class="card-title">Figma Designs</h5>
+                <p class="card-text">Example Figma Designs that I've made in
+                  my private time, some mine, some are a
+                  spin on instructional tutorials.</p>
+                <div class="icon_container"><i class="devicon devicon-figma-plain"></i>
+                </div>
+              </div><button id="img/UI.jpg" type="button" data-bs-toggle="modal" data-bs-target="#imageModal"
+                class="btn btn-dark m-3 "><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;&nbsp;See
+                Project</button>
+            </div>
+            <div class="card">
+              <img src="/img/Card_Images/ToDo.png" class="card-img-top" alt="website image">
+              <div class="card-body">
+                <h5 class="card-title">To-Do List</h5>
+                <p class="card-text">A To-Do list app made with React.js and
+                  web storage. An online tutorial project
+                  with some of my custom
+                  changes.</p>
+                <div class="icon_container"><i class="devicon devicon-html5-plain"></i>
+                  <i class="devicon devicon-css3-plain"></i>
+                  <i class="devicon devicon-javascript-plain"></i>
+                  <i class="devicon devicon-react-plain"></i>
+                  <i class="devicon devicon-nodejs-plain"></i>
+                  <i class="devicon devicon-npm-original-wordmark"></i>
+                  <i class="devicon devicon-git-plain"></i>
+                  <i class="devicon devicon-github-plain"></i>
+                </div>
+              </div><a rel="noopener" href="https://a2do.netlify.app/" target="_blank" class="btn btn-secondary m-3"><i
+                  class="fa fa-link" aria-hidden="true"></i>&nbsp;&nbsp;Go
+                to
+                link</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="subheading mt-5">Programming Languages &amp;
+          Tools</div>
+        <div class="skills-container">
+          <ul class="list-inline list-icons mt-3 mb-4">
+            <li class="list-inline-item" title="HTML">
+              <i class="devicon devicon-html5-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="CSS">
+              <i class="devicon devicon-css3-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="JavaScript">
+              <i class="devicon devicon-javascript-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="jQuery">
+              <i class="devicon devicon-jquery-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="SASS">
+              <i class="devicon devicon-sass-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="Bootstrap">
+              <i class="devicon devicon-bootstrap-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="Progressive Web Apps">
+              <img alt="icon" class="colored blueChange" src="/img/PWA.svg" alt="PWA" />
+            </li>
+            <li class="list-inline-item" title="Vue.js">
+              <i class="devicon devicon-vuejs-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="React">
+              <i class="devicon devicon-react-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="Redux">
+              <i class="devicon devicon-redux-original colored"></i>
+            </li>
+            <li class="list-inline-item" title="MaterialUI">
+              <i class="devicon devicon-materialui-plain colored" title="MaterialUI"></i>
+            </li>
+            <li class="list-inline-item" title="GSap">
+              <img alt="icon" id="GSAP" class="colored changeGSAP" src="/img/gsap.svg" alt="GSAP" />
+            </li>
+            <li class="list-inline-item" title="MaterializeCSS">
+              <img alt="icon" class="colored blueChange" id="Materialize" src="/img/materialize.svg"
+                alt="Materialize" />
+            </li>
+            <li class="list-inline-item" title="Angular">
+              <i class="devicon devicon-angularjs-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="TypeScript">
+              <i class="devicon devicon-typescript-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="Node.js">
+              <i class="devicon devicon-nodejs-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="Node Package Manager">
+              <i class="devicon devicon-npm-original-wordmark colored"></i>
+            </li>
+            <li class="list-inline-item" title="Docker">
+              <i class="devicon devicon-docker-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="Nginx">
+              <i class="devicon devicon-nginx-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="ASP.NET">
+              <i class="devicon devicon-dot-net-plain-wordmark colored" title="ASP.NET"></i>
+            </li>
+            <li class="list-inline-item" title="Python">
+              <i class="devicon devicon-python-plain colored" title="Python"></i>
+            </li>
+            <li class="list-inline-item" title="PostgreSQL">
+              <i class="devicon devicon-postgresql-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="MySQL">
+              <i class="devicon devicon-mysql-plain colored" title="MySQL"></i>
+            </li>
+            <li class="list-inline-item" title="MongoDB">
+              <i class="devicon devicon-mongodb-plain-wordmark colored" title="MongoDB"></i>
+            </li>
+            <li class="list-inline-item" title="Git">
+              <i class="devicon devicon-git-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="GitHub">
+              <i class="devicon devicon-github-plain colored color-modifier"></i>
+            </li>
+            <li class="list-inline-item" title="GitLab">
+              <i class="devicon devicon-gitlab-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="Jira">
+              <i class="devicon devicon-jira-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="Figma">
+              <i class="devicon devicon-figma-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="Gimp">
+              <i class="devicon devicon-gimp-plain colored"></i>
+            </li>
+            <li class="list-inline-item" title="Inkscape">
+              <i class="devicon devicon-inkscape-plain colored color-modifier"></i>
+            </li>
+            <li class="list-inline-item" title="VS Code">
+              <i class="devicon devicon-vscode-plain colored"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="subheading mb-3">Languages</div>
+        <ul class="fa-ul mb-0">
+          <li class="pl">
+            Polish
+            <div class="progress width-50">
+              <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"
+                aria-label="Native Polish speaker"><b>Native</b></div>
+            </div>
+          </li>
+          <li class="uk">
+            English
+            <div class="progress width-50">
+              <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"
+                aria-label="C1 English speaker"><b>C1+</b></div>
+            </div>
+          </li>
+          <li class="de">
+            German
+            <div class="progress width-50">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 45%" aria-label="A2 German speaker"><b>A2</b></div>
+            </div>
+          </li>
+        </ul>
+    </div>
+  </div>
+  </section>
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+    <div class="my-auto">
+      <h2 id="awards_header" class="mb-5">Achievements</h2>
+      <ul class="fa-ul mb-0 cert-section">
+        <li>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/mediCert3.gif"><i class="fa fa-star fa-lg text-warning"></i> Written
+            praise for
+            help and work quality</button>
+          <span class="badge bg-secondary">2012 | Awarded by company
+            HQ</span>
+        </li>
+        <li>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/ujkCert.png"><i class="fa fa-star fa-lg text-warning"></i> Scholarship
+            for
+            best
+            students</button>
+          <span class="badge bg-secondary">2013 | University
+            scholarship</span>
+        </li>
+        <li>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/mediCert4.jpg"><i class="fa fa-star fa-lg text-warning"></i> Most ideas
+            in 2013
+          </button>
+          <span class="badge bg-secondary">2013 | Medicover Call
+            Center award</span>
+        </li>
+        <li>
+
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/capiCert.jpg"><i class="fa fa-star fa-lg text-warning"></i> Accounting
+            and
+            bookkeeping training</button>
+          <span class="badge bg-secondary">Creator &amp; lead trainer
+            for 1.5 years</span>
+        </li>
+
+        <li class="googl">
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/GooCert.jpg"><b></b>Google
+            Internet
+            Revolutions</button>
+          <span class="badge bg-secondary">SEO | SEM | e-commerce |
+            online marketing</span>
+        </li>
+        <li class="sixsigma">
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/SixSigma.png"><b></b>Six
+            Sigma
+            <span class="badge bg-success">Green Belt</span>
+            certified</button>
+        </li>
+        <li class="grass">
+          <button type="button" class="btn btn-light btn-sm modal-medium" data-bs-toggle="modal"
+            data-bs-target="#imageModal" id="img/Certificates/Grass7.png"><b></b>Debugging
+            Code</button>
+          <button type="button" class="btn btn-light btn-sm modal-medium" data-bs-toggle="modal"
+            data-bs-target="#imageModal" id="img/Certificates/Grass6.png"><b></b>Animations
+            II</button>
+          <button type="button" class="btn btn-light btn-sm modal-medium" data-bs-toggle="modal"
+            data-bs-target="#imageModal" id="img/Certificates/Grass5.png"><b></b>Animations</button>
+          <button type="button" class="btn btn-light btn-sm modal-medium" data-bs-toggle="modal"
+            data-bs-target="#imageModal" id="img/Certificates/Grass4.png"><b></b>Array
+            Methods</button>
+          <button type="button" class="btn btn-light btn-sm modal-medium" data-bs-toggle="modal"
+            data-bs-target="#imageModal" id="img/Certificates/Grass3.png"><b></b>Intro to
+            Interviewing</button>
+          <button type="button" class="btn btn-light btn-sm modal-medium" data-bs-toggle="modal"
+            data-bs-target="#imageModal" id="img/Certificates/Grass2.png"><b></b>Fundamentals
+            II</button>
+          <button type="button" class="btn btn-light btn-sm modal-medium" data-bs-toggle="modal"
+            data-bs-target="#imageModal" id="img/Certificates/Grass1.png"><b></b>Fundamentals</button>
+          <span class="badge bg-secondary">JavaScript | SVG | D3
+            library</span>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_NextJS.jpg"><b></b>Next
+            JS</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Gatsby.jpg"><b></b>Gatsby</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Typescript.jpg"><b></b>TypeScript</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Bootstrap.jpg"><b></b>Bootstrap 4</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Vue.jpg"><b></b>Vue
+            JS</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Svelte.jpg"><b></b>Svelte</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_MD.jpg"><b></b>MaterializeCSS</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Ember.jpg"><b></b>Ember
+            JS</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_React Development.jpg"><b></b>React</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_AJS.png"><b></b>AngularJS
+            & Karma</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_JQ.png"><b></b>jQuery</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/Mucha_JS.jpg"><b></b>JavaScript</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/JSA.png"><b></b>JavaScript
+            Advanced</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/Mucha_CSS.jpg"><b></b>CSS</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/Mucha_HTML.jpg"><b></b>HTML</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/HTMLA.png"><b></b>HTML
+            Advanced</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_BaW.png"><b></b>Building
+            a Website</button><span class="badge bg-secondary">FrontEnd
+            Development</span>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_ReactNative.jpg"><b></b>React
+            Native</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Flutter.jpg"><b></b>Flutter</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Ionic.jpeg"><b></b>Ionic</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Dart.jpg"><b></b>Dart &
+            Flutter</button><span class="badge bg-secondary">PWA |
+            multi-platform</span>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_GraphQL.jpg"><b></b>GraphQL</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Deno.jpg"><b></b>Deno</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Laravel.jpg"><b></b>Laravel
+            PHP</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Node.jpg"><b></b>Node
+            JS</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Express.jpg"><b></b>Express
+            JS</button><span class="badge bg-secondary">BackEnd
+            Development</span>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_RDBMS.jpg"><b></b>RDBMS</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_SQL.png"><b></b>SQL</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Mongo.jpg"><b></b>MongoDB</button><span class="badge bg-secondary">Databases</span>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Firebase.jpg"><b></b>Firebase</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_AWS.jpg"><b></b>Amazon
+            Web Services</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_CC.jpg"><b></b>Cloud
+            Computing</button><span class="badge bg-secondary">Cloud</span>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Selenium.jpg"><b></b>Selenium
+            Automated Testing</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Testing.jpg"><b></b>Software
+            Testing</button><span class="badge bg-secondary">Tests</span>
+        </li>
+        <li class="prohub">
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_KotlinA.jpg"><b></b>Kotlin
+            for
+            Android</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Tableau.jpg"><b></b>Tableau</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Git.jpg"><b></b>Git
+            &amp;
+            GitHub</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Flask.jpg"><b></b>Flask
+            using Python</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/Mucha_Python 2.jpg"><b></b>Python
+            2</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Scala.jpg"><b></b>Scala</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Elm.jpg">
+            <b></b>Elm</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_ERP.jpg"><b></b>ERP
+            Systems</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_IPv4.jpg"><b></b>IPv4
+            &
+            Networking</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_MATLAB.jpg"><b></b>MATLAB</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_DigM.jpeg"><b></b>Digital
+            Marketing</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_RPA.jpg"><b></b>Robotic
+            Process Automation</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_SEO.jpg"><b></b>SEO</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_VBNet.png"><b></b>VB.Net</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_VB 6.png"><b></b>VB
+            6</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_CN.png"><b></b>Computer
+            Networks</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/ITB.png"><b></b>IT
+            Basics</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_Blockchain.png"><b></b>Blockchain</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/RM_AI.png"><b></b>Artificial
+            Intelligence</button>
+          <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#imageModal"
+            id="img/Certificates/Mucha_Java.jpg"><b></b>Java</button>
+          <span class="badge bg-secondary">Other</span>
+        </li>
+        <li class="m1m0">
+          <button type="button" class="btn btn-light btn-sm modal-medium" data-bs-toggle="modal"
+            data-bs-target="#imageModal" id="img/Certificates/MimoCert5.png"><b></b>Build
+            an
+            iOS App</button><span class="badge bg-secondary">Swift |
+            Xcode</span>
+        </li>
+        <li class="m1m0">
+          <button type="button" class="btn btn-light btn-sm modal-medium" data-bs-toggle="modal"
+            data-bs-target="#imageModal" id="img/Certificates/MimoCert4.png"><b></b>Make
+            an
+            Android App</button>
+          <span class="badge bg-secondary">Kotlin | Android
+            Studio</span>
+        </li>
+        <li class="m1m0">
+          <button type="button" class="btn btn-light btn-sm modal-medium" data-bs-toggle="modal"
+            data-bs-target="#imageModal" id="img/Certificates/MimoCS.png"><b></b>Make
+            a
+            game</button>
+          <span class="badge bg-secondary">C# | Unity</span>
+        </li>
+        <li class="m1m0">
+          <button type="button" class="btn btn-light btn-sm modal-medium" data-bs-toggle="modal"
+            data-bs-target="#imageModal" id="img/Certificates/MimoCert3.png"><b></b>Become a
+            Hacker</button>
+          <span class="badge bg-secondary">Cryptography | SQL | White
+            Hat Hacking</span>
+        </li>
+        <li class="m1m0">
+          <button type="button" class="btn btn-light btn-sm modal-medium" data-bs-toggle="modal"
+            data-bs-target="#imageModal" id="img/Certificates/MimoCert2.png"><b></b>Learn
+            to
+            Code</button>
+          <button type="button" class="btn btn-light btn-sm modal-medium" data-bs-toggle="modal"
+            data-bs-target="#imageModal" id="img/Certificates/MimoCert.jpg"><b></b>Make
+            a
+            website</button>
+          <span class="badge bg-secondary">HTML | CSS | JS |
+            GitHub</span>
+        </li>
+        <li class="udem"><a title="link" rel="noopener"
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-68f8cbc5-2baf-4bb7-8d06-a514d19ab24a.jpg?v=1586628547000"
+            target="_blank"><b></b> Vue.js Fast Crash Course</a> | <a title="link" rel="noopener"
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-f949ed50-77e8-4b5a-b6af-ca50018693dc.jpg?v=1584808203000"
+            target="_blank"><b></b> Vue.js Crash Course</a> | <a title="link" rel="noopener"
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-d40ad945-51f8-46d2-a185-f6ab24f8515f.jpg?v=1584714659000"
+            target="_blank"><b></b> The Ultimate Vue 2 Crash Course</a>
+          <span class="badge bg-secondary">Vue.js</span>
+        </li>
+        <li class="udem"><a title="link" rel="noopener"
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-38929dc3-ff92-4093-b9c0-64630caabe23.jpg?v=1588366963000"
+            target="_blank"><b></b> Essentials in JavaScript ES6
+            Course</a></li>
+        <li class="udem"><a title="link" rel="noopener"
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-c68a67b2-19d5-4534-a764-96bc36feea44.jpg?v=1585428978000"
+            target="_blank"><b></b> Git Started with GitHub Course</a></li>
+        <li class="udem"><a title="link" rel="noopener"
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-acba41b5-a59b-4fef-bae2-e105f1ed5681.jpg?v=1585128111000"
+            target="_blank"><b></b> React Basic Course</a></li>
+        <li class="udem"><a title="link" rel="noopener"
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-CP36CDTE.jpg?v=1538746070000"
+            target="_blank"><b></b> Sass: From Beginner to Advanced
+            Course</a></li>
+        <li class="ssoft"><a title="link" rel="noopener"
+            href="https://skillsoft.digitalbadges.skillsoft.com/74a68b94-6826-47aa-ba64-5edecac8960d#gs.3lfes7"
+            target="_blank"><b></b> Introduction to ASP.NET Core
+            1.0</a></li>
+        <li class="ssoft"><a title="link" rel="noopener"
+            href="https://skillsoft.digitalbadges.skillsoft.com/9e0e43af-e932-435d-9491-618975dbabbc"
+            target="_blank"><b></b> Getting Started with REST &amp; .NET
+            Core Course</a></li>
+        <li class="ssoft"><a title="link" rel="noopener"
+            href="https://skillsoft.digitalbadges.skillsoft.com/b866f842-b4f1-475c-af42-11998a034d8f"
+            target="_blank"><b></b> Databases, Bootstrap, &amp; jQuery in
+            Web Design Course</a></li>
+        <li class="ssoft"><a title="link" rel="noopener"
+            href="https://skillsoft.digitalbadges.skillsoft.com/5618b696-e926-4fb5-bd09-eda732fbf145"
+            target="_blank"><b></b> REST API: Exploring the Basic Features
+            Course</a></li>
+        <li class="ssoft"><a title="link" rel="noopener"
+            href="https://skillsoft.digitalbadges.skillsoft.com/c6ffff42-effd-47d9-bfc9-7d7c7dd7eb62"
+            target="_blank"><b></b> Working with CSS Layouts &amp; the Ionic
+            Framework CLI Course</a></li>
+        <li class="ssoft"><a title="link" rel="noopener"
+            href="https://skillsoft.digitalbadges.skillsoft.com/ca69beeb-6c11-413f-b3e2-306fb634ee65"
+            target="_blank"><b></b> Responsive Web Design Course</a></li>
+        <li class="ssoft"><a title="link" rel="noopener"
+            href="https://skillsoft.digitalbadges.skillsoft.com/15a72034-65d2-485f-b1ca-4c99d0d54c55"
+            target="_blank"><b></b> WordPress Installation &amp;
+            Configuration Course</a></li>
+        <li class="ssoft"><a title="link" rel="noopener"
+            href="https://skillsoft.digitalbadges.skillsoft.com/3ff9900c-ffcc-41e7-ad93-7a4809a1a306"
+            target="_blank"><b></b> SOLID &amp; GRASP - Object-Oriented
+            Programming Course</a></li>
+        <li class="ssoft"><a title="link" rel="noopener"
+            href="https://skillsoft.digitalbadges.skillsoft.com/da69b721-6d85-4d51-b10f-6bbacddaf3a1"
+            target="_blank"><b></b> AJAX Data Requests &amp; Responses
+            Course</a></li>
+        <li class="ssoft"><a title="link" rel="noopener"
+            href="https://skillsoft.digitalbadges.skillsoft.com/9852c437-546d-4213-9aa1-952fe7d21096"
+            target="_blank"><b></b> Accessibility &amp; Design
+            Course</a></li>
+        <li class="ssoft"><a title="link" rel="noopener"
+            href="https://skillsoft.digitalbadges.skillsoft.com/7c0b4a02-320e-4cfc-a144-c0aff2351bb1"
+            target="_blank"><b></b> Advanced Visualizations &amp;
+            Dashboards: Visualization Using Python</a></li>
+        <li class="ssoft"><a title="link" rel="noopener"
+            href="https://skillsoft.digitalbadges.skillsoft.com/d0532007-a775-414f-8727-cad30a57d4ac"
+            target="_blank"><b></b> Azure SQL Database Course</a></li>
+        <li class="solol">
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-K7H5HOQO/png"
+            target="_blank"><b></b> Web Developer with Angular</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-PDDHW0YN/png"
+            target="_blank"><b></b> Angular</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-J2VTVYWJ/png"
+            target="_blank"><b></b> Coding Foundations</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-NBIK5IPY/png"
+            target="_blank"><b></b> Web Development</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-CPHEDDZF/png"
+            target="_blank"><b></b> Introduction to JavaScript</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-MU1RTKIN/png"
+            target="_blank"><b></b> Introduction to CSS</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-PI0FQZU0/png"
+            target="_blank"><b></b> Introduction to HTML</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-MEKOJKYU/png/"
+            target="_blank"><b></b> JavaScript Intermediate</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/1141-489871/jpg"
+            target="_blank"><b></b> Web
+            Development Fundamentals</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/1140-489871/jpg"
+            target="_blank"><b></b> Game Development with
+            JS</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/1165-489871/jpg"
+            target="_blank"><b></b> Coding for
+            Marketers</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/1162-489871/jpg"
+            target="_blank"><b></b> Responsive
+            Web Design</a> |
+          <a title="link" rel="noopener" href="/img/RM_JS2.jpg" target="_blank"><b></b> JavaScript w. practices</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/CT-PXLJOOF4/png"
+            target="_blank"><b></b>
+            Angular + NestJS</a> | <a title="link" rel="noopener"
+            href="https://www.sololearn.com/Certificate/CT-B54V0XSM/png" target="_blank"><b></b>
+            React + Redux</a> | <a title="link" rel="noopener"
+            href="https://www.sololearn.com/Certificate/CT-AAJXJ22W/png" target="_blank"><b></b>
+            jQuery</a> | <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/CT-DSUOBRNX/png"
+            target="_blank"><b></b>
+            JavaScript</a> | <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/CT-BEEF75IA/png"
+            target="_blank"><b></b>
+            CSS</a> | <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/CT-5FYPNXTU/png"
+            target="_blank"><b></b> HTML</a>
+          | <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/CT-IGOZQDWO/png"
+            target="_blank"><b></b> PHP</a> <span class="badge bg-secondary">Web Development</span>
+        </li>
+        <li class="solol">
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-PV9B7PCU/png"
+            target="_blank"><b></b>
+            Data Programming</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-LZBU8TBI/png"
+            target="_blank"><b></b>
+            Python Developer</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-XLVZREXX/png"
+            target="_blank"><b></b>
+            Python Intermediate</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-TUBMSAW1/png"
+            target="_blank"><b></b>
+            Introduction to Python</a> |
+          <a title="link" rel="noopener"
+            href="https://www.sololearn.com/certificates/course/en/489871/1139/landscape/png" target="_blank"><b></b>
+            Python for Finance</a> |
+          <a title="link" rel="noopener"
+            href="https://www.sololearn.com/certificates/course/en/489871/1093/landscape/png" target="_blank"><b></b>
+            Data
+            Science w. practices</a> |
+          <a title="link" rel="noopener"
+            href="https://www.sololearn.com/certificates/course/en/489871/1094/landscape/png" target="_blank"><b></b>
+            Machine Learning w. practices</a> |
+          <a title="link" rel="noopener"
+            href="https://www.sololearn.com/certificates/course/en/489871/1161/landscape/png" target="_blank"><b></b>
+            Python for Data Science</a> |
+          <a title="link" rel="noopener"
+            href="https://www.sololearn.com/certificates/course/en/489871/1159/landscape/png" target="_blank"><b></b>
+            Python Data Structures</a> |
+          <a title="link" rel="noopener"
+            href="https://www.sololearn.com/certificates/course/en/489871/1158/landscape/png" target="_blank"><b></b>
+            Intermediate Python</a> |
+          <a title="link" rel="noopener"
+            href="https://www.sololearn.com/certificates/course/en/489871/1157/landscape/png" target="_blank"><b></b>
+            Python for Beginners</a> |
+          <a title="link" rel="noopener" href="/img/RM_P3_practice.jpg" target="_blank"><b></b> Python 3 w.
+            practices</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/CT-EBRZKB0P/png"
+            target="_blank"><b></b> Python Core</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/CT-LYOSL021/png"
+            target="_blank"><b></b> Data Science with
+            Python</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/CT-1RRJGBFL/png"
+            target="_blank"><b></b> Machine Learning</a>
+          <span class="badge bg-secondary">Python</span>
+        </li>
+        <li class="solol">
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-QXFZZFQ1/png/"
+            target="_blank"><b></b> Introduction to SQL</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-GLUUEWT0/png/"
+            target="_blank"><b></b> SQL Intermediate</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/1060-489871/jpg/"
+            target="_blank"><b></b> SQL w. practices</a> |
+          <a title="link" rel="noopener" href="/img/RM_SQL2.jpg" target="_blank"><b></b> SQL</a>
+          <span class="badge bg-secondary">Databases</span>
+        </li>
+        <li class="solol">
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-RARRSO46/png"
+            target="_blank"><b></b>
+            Introduction to C++</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-QPORR2BL/png"
+            target="_blank"><b></b>
+            Introduction to C#</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-EKTVJUC6/png"
+            target="_blank"><b></b>
+            Introduction to C</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-MF0CAVQS/png"
+            target="_blank"><b></b>
+            Introduction to JAVA</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-3OPOBO6O/png"
+            target="_blank"><b></b>
+            C Intermediate</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-MZOFJ6VV/png"
+            target="_blank"><b></b>
+            C++ Intermediate</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-VUMC4D8D/png"
+            target="_blank"><b></b>
+            JAVA Intermediate</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-EFSGRZMQ/png"
+            target="_blank"><b></b>
+            C# Intermediate</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/certificate/CC-IA2QP55Z/png"
+            target="_blank"><b></b> Tech for Everyone (Data Science)</a> |
+          <a title="link" rel="noopener"
+            href="https://www.sololearn.com/certificates/course/en/489871/1147/landscape/png" target="_blank"><b></b>
+            R</a> |
+          <a title="link" rel="noopener"
+            href="https://www.sololearn.com/certificates/course/en/489871/1164/landscape/png" target="_blank"><b></b>
+            Go</a> |
+          <a title="link" rel="noopener" href="/img/RM_Cpp2.png" target="_blank"><b></b> C++ w. practices</a> |
+          <a title="link" rel="noopener" href="/img/RM_Cs2.png" target="_blank"><b></b> C# w. practices</a> |
+          <a title="link" rel="noopener"
+            href="https://www.sololearn.com/certificates/course/en/489871/1160/landscape/png" target="_blank"><b></b>
+            Kotlin</a> |
+          <a title="link" rel="noopener" href="/img/RM_Java2.jpg" target="_blank"><b></b> JAVA w. practices</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/CT-USHFAI5H/png"
+            target="_blank"><b></b> Java</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/CT-RPBNYJYG/png"
+            target="_blank"><b></b> C#</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/CT-UVOQRRI5/png"
+            target="_blank"><b></b> C++</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/1089-489871/pdf/"
+            target="_blank"><b></b> C</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/CT-5Z5PZPVC/png"
+            target="_blank"><b></b> Swift 4</a> |
+          <a title="link" rel="noopener" href="https://www.sololearn.com/Certificate/CT-7K5DJ6VV/png"
+            target="_blank"><b></b> Ruby</a>
+          <span class="badge bg-secondary">Other</span>
+        </li>
+        <li class="duol"><b></b>Duolingo German Fluency: <a title="link" rel="noopener"
+            href="https://www.duolingo.com/profile/Rafal_Mucha" target="_blank">Intermediate (Estimated)</a></li>
+      </ul>
+    </div>
+  </section>
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+    <div class="my-auto">
+      <h2 id="interests_header" class="mb-5">Interests</h2>
+      <div id="interestsCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#interestsCarousel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#interestsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#interestsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="/img/Slider_Images/slide0.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="/img/Slider_Images/slide1.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="/img/Slider_Images/slide2.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#interestsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#interestsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <ul class="fa-ul mb-0 subheading interests">
+        <li><i class="fa-li fa fa-microchip"></i> Electronics &amp; new
+          technologies:&nbsp;&nbsp;VR, AR, artificial
+          intelligence, smart tech</li>
+        <li><i class="fa-li fa fa-code"></i> Coding, exploring new
+          languages, FrontEnd frameworks, libraries &amp;
+          APIs
+        </li>
+        <li><i class="fa-li fa fa-trophy"></i>Poker, card &amp; board
+          games</li>
+        <li><i class="fa-li fa fa-futbol-o"></i> Sports: gym, dancing,
+          mountain walking</li>
+        <li><i class="fa-li fa fa-music"></i> Music, mostly instrumental
+          &amp; classical</li>
+        <li><i class="fa-li fa fa-headphones"></i> Music equipment:
+          headphones &amp; speakers</li>
+        <li><i class="fa-li fa fa-language"></i> Learning languages:
+          currently German
+        </li>
+        <li><i class="fa-li fa fa-book"></i> Personal development &amp;
+          financial literature</li>
+        <li><i class="fa-li fa fa-plane"></i> Traveling the world</li>
+        <li><i class="fa-li fa fa-cutlery"></i> Cooking</li>
+      </ul>
+      <i class="fa fa-code watermark" aria-hidden="true"></i>
+    </div>
+  </section>
+  <footer class="resume-section d-flex flex-column" id="footer">
+    <div class="my-auto">
+      <div class="subheading mb-3">Data processing agreement under the GDPR
+        &#40;a.k.a. RODO&#41;:</div>
+      <ul class="fa-ul mb-0">
+        <li class="pl">
+          <p class="mb-0 RODO">Wyrażam zgodę na przetwarzanie moich danych
+            osobowych dla potrzeb niezbędnych do
+            realizacji procesu rekrutacji zgodnie z Rozporządzeniem
+            Parlamentu Europejskiego i Rady &#40;UE&#41;
+            2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób
+            fizycznych w związku z przetwarzaniem danych
+            osobowych i w sprawie swobodnego przepływu takich danych oraz
+            uchylenia dyrektywy 95/46/WE &#40;RODO&#41;.
+          </p>
+          <hr>
+        </li>
+        <li class="uk">
+          <p class="mb-0 RODO">I agree to the processing of personal data
+            provided in this document for realising the
+            recruitment process pursuant to the Personal Data Protection Act
+            of 10 May 2018 &#40;Journal of Laws 2018,
+            item 1000&#41; and in agreement with Regulation &#40;EU&#41;
+            2016/679 of the European Parliament and of
+            the
+            Council of 27 April 2016 on the protection of natural persons
+            with regard to the processing of personal
+            data
+            and on the free movement of such data, and repealing Directive
+            95/46/EC &#40;General Data Protection
+            Regulation&#41;.</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  </div>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
