@@ -101,7 +101,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="col-md-12 mb-md-3 mb-sm-2 mb-xs-2">
-              <form id="contact-form" name="contact-form" netlify>
+              <form id="contact-form" name="contact-form">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="md-form mb-3">
@@ -142,7 +142,7 @@
                 </div>
                 <div class="text-end">
                   <input id="form_clearer" type="button" value="CLEAR &#10006;" class="btn btn-secondary me-2" />
-                  <input type="submit" value="SEND &#10132;" class="btn btn-success" />
+                  <input id="form_submit" type="submit" value="SEND &#10132;" class="btn btn-success" />
                 </div>
               </form>
             </div>
@@ -274,6 +274,9 @@
             Development, UI, UX & mobile. People-oriented, eager to learn new
             skills, proactive and keen on challenges.
           </p>
+          <div id="liveAlert"></div>
+          <button type="button" class="btn btn-success" id="liveAlertBtn">Show alert</button>
+          <button type="button" class="btn btn-danger" id="liveAlertFail">Fail alert</button>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item flipLink" title="LinkedIn">
               <a title="link" rel="noopener" href="https://www.linkedin.com/in/rafał-mucha-5b4a84110" target="_blank">

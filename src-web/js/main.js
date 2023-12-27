@@ -28,6 +28,63 @@ const image = document.getElementById("imageTag");
 const modalFrame = document.getElementById("websiteModal");
 const frame = document.getElementById("websiteModalIframe");
 const anchor = document.getElementById("websiteModalAnchor");
+const submitForm = document.getElementById("form_submit");
+const alertToast = document.getElementById("liveAlert");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const subjectInput = document.getElementById("subject");
+const messageInput = document.getElementById("message");
+
+submitForm.addEventListener("click", postData);
+
+async function postData(e) {
+  e.preventDefault();
+  const res = await fetch("/post", {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      name: nameInput.value,
+      email: emailInput.value,
+      subject: subjectInput.value,
+      message: messageInput.value,
+    }),
+  });
+  console.log(res);
+  const data = res.json();
+  if (res.status === 200) {
+    alert("Your form is sent!", "success");
+  } else {
+    alert("Form submission error.", "danger");
+  }
+  document.getElementById("contact-form").reset();
+}
+
+const alert = (message, type) => {
+  const wrapper = document.createElement("div");
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible fade show" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    "</div>",
+  ].join("");
+
+  alertToast.append(wrapper);
+};
+const alertFail = document.getElementById("liveAlertFail");
+if (alertFail) {
+  alertFail.addEventListener("click", () => {
+    alert("Form submission error.", "danger");
+  });
+}
+const alertTrigger = document.getElementById("liveAlertBtn");
+if (alertTrigger) {
+  alertTrigger.addEventListener("click", () => {
+    alert("Your form is sent!", "success");
+  });
+}
 //Check user browser
 if (
   navigator.userAgent.indexOf("Chrome") != -1 ||
