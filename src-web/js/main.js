@@ -30,17 +30,22 @@ const modalFrame = document.getElementById("websiteModal");
 const frame = document.getElementById("websiteModalIframe");
 const anchor = document.getElementById("websiteModalAnchor");
 const submitForm = document.getElementById("form_submit");
+const submitBug = document.getElementById("bug_submit");
+const bugForm = document.getElementById("bug_submit");
 const alertToast = document.getElementById("liveAlert");
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const subjectInput = document.getElementById("subject");
 const messageInput = document.getElementById("message");
+const emailBugInput = document.getElementById("email2");
+const reportBugInput = document.getElementById("report");
 
 submitForm.addEventListener("click", postData);
+submitBug.addEventListener("click", postBug);
 
 async function postData(e) {
   e.preventDefault();
-  const res = await fetch("/api", {
+  const res = await fetch("/api/msg", {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -61,6 +66,30 @@ async function postData(e) {
     toast("Form submission error.", "danger");
   }
   bootstrap.Modal.getInstance(document.getElementById("chatForm")).hide();
+}
+
+async function postBug(e) {
+  e.preventDefault();
+  const res = await fetch("/api/bugs", {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+
+    body: JSON.stringify({
+      email: emailBugInput.value,
+      report: reportBugInput.value,
+    }),
+  });
+  const data = res.json();
+  if (res.status === 200) {
+    console.log(data);
+    toast("Your report is sent!", "success");
+  } else {
+    toast("Report submission error.", "danger");
+  }
+  bootstrap.Modal.getInstance(document.getElementById("bugForm")).hide();
 }
 
 const toast = (message, type) => {

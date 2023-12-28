@@ -16,42 +16,24 @@ const port = 1987;
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "src-web")));
-
-
-// app.post("/api", async (req, res) => {
-//   const data = req.body; // Get the data from the request body
-//   try {
-//     const response = await pb.collection("Messages").create(data);
-//     console.log("Data inserted successfully:", response);
-//     res.sendStatus(200);
-//   } catch (error) {
-//     console.error("Error inserting data:", error);
-//     res.sendStatus(500);
-//   }
-// });
-app.post("/api", async (request, response) => {
+app.post("/api/msg", async (request, response) => {
   axios.post(
     "http://127.0.0.1:8090/api/collections/Messages/records",
     request.body
   );
   response.json({ status: "ok" });
-  // await pb
-  //   .collection("Messages")
-  //   .create(req.body)
-  //   .then((response) => {
-  //     console.log("Data inserted successfully:", response);
-  //     res.sendStatus(200);
-  //   })
-  //   .catch((error) => {
-  //     console.error("Error inserting data:", error);
-  //     res.sendStatus(500);
-  //   });
+});
+app.post("/api/bugs", async (request, response) => {
+  axios.post(
+    "http://127.0.0.1:8090/api/collections/Bugs/records",
+    request.body
+  );
+  response.json({ status: "ok" });
 });
 
 app.use((req, res, next) => {
   res.status(404).sendFile(__dirname + "/src-web/404.html");
 });
-
 
 app.listen(port, (err) => {
   if (err) {
