@@ -2,17 +2,19 @@
   "name": "src",
   "version": "1.0.0",
   "description": "Portfolio via local server",
-  "main": "server.js",
+  "main": "server.mjs",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "nodemon server.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.mjs"
   },
   "keywords": [],
   "author": "Rafał Mucha",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "pocketbase": "^0.20.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"

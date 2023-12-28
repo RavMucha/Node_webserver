@@ -39,7 +39,7 @@ submitForm.addEventListener("click", postData);
 
 async function postData(e) {
   e.preventDefault();
-  const res = await fetch("/post", {
+  const res = await fetch("/api", {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -52,20 +52,29 @@ async function postData(e) {
       message: messageInput.value,
     }),
   });
+  console.log(
+    JSON.stringify({
+      name: nameInput.value,
+      email: emailInput.value,
+      subject: subjectInput.value,
+      message: messageInput.value,
+    })
+  );
   console.log(res);
   const data = res.json();
   if (res.status === 200) {
-    alert("Your form is sent!", "success");
+    console.log(data);
+    toast("Your form is sent!", "success");
   } else {
-    alert("Form submission error.", "danger");
+    toast("Form submission error.", "danger");
   }
-  document.getElementById("contact-form").reset();
+  bootstrap.Modal.getInstance(document.getElementById("chatForm")).hide();
 }
 
-const alert = (message, type) => {
+const toast = (message, type) => {
   const wrapper = document.createElement("div");
   wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible fade show" role="alert">`,
+    `<div class="alert alert-${type} alert-dismissible auto-close fade show" role="alert">`,
     `   <div>${message}</div>`,
     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
     "</div>",
@@ -73,18 +82,7 @@ const alert = (message, type) => {
 
   alertToast.append(wrapper);
 };
-const alertFail = document.getElementById("liveAlertFail");
-if (alertFail) {
-  alertFail.addEventListener("click", () => {
-    alert("Form submission error.", "danger");
-  });
-}
-const alertTrigger = document.getElementById("liveAlertBtn");
-if (alertTrigger) {
-  alertTrigger.addEventListener("click", () => {
-    alert("Your form is sent!", "success");
-  });
-}
+
 //Check user browser
 if (
   navigator.userAgent.indexOf("Chrome") != -1 ||
