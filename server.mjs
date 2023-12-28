@@ -15,10 +15,6 @@ const app = express();
 const port = 1987;
 app.use(express.json());
 
-// app.use((req, res) => {
-//   res.status(404);
-//   res.sendFile(path.join(__dirname, "/src-web/404.html"));
-// });
 
 
 // app.post("/api", async (req, res) => {
@@ -49,6 +45,10 @@ app.post("/api", async (request, response) => {
   //   });
 });
 
+app.use((req, res) => {
+  res.status(404);
+  res.sendFile(path.join(__dirname, "/src-web/404.html"));
+});
 
 app.listen(port, (err) => {
   if (err) {
