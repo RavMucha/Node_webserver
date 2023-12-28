@@ -1,4 +1,4 @@
-//PWA required ServiceWorker installation script
+// PWA required ServiceWorker installation script
 const registerServiceWorker = async () => {
   if ("serviceWorker" in navigator) {
     try {
@@ -20,7 +20,8 @@ const registerServiceWorker = async () => {
     }
   }
 };
-registerServiceWorker();
+// registerServiceWorker();
+
 //Variables
 const loader = document.getElementById("loading-container");
 const modalImage = document.getElementById("imageModal");

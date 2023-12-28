@@ -15,6 +15,9 @@ const app = express();
 const port = 1987;
 app.use(express.json());
 
+app.use(express.static(path.join(__dirname, "src-web")));
+
+
 // app.post("/api", async (req, res) => {
 //   const data = req.body; // Get the data from the request body
 //   try {
@@ -45,13 +48,15 @@ app.post("/api", async (request, response) => {
   //   });
 });
 
+app.use((req, res, next) => {
+  res.status(404).sendFile(__dirname + "/src-web/404.html");
+});
+
+
 app.listen(port, (err) => {
   if (err) {
     console.log(`Operation ended with an error: ${err}`);
   } else {
     console.log(`Application listening  on port ${port}`);
   }
-});
-app.use((req, res, next) => {
-  res.status(404).sendFile(__dirname + "/src-web/404.html");
 });
