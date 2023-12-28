@@ -45,10 +45,10 @@ app.post("/api", async (request, response) => {
   //   });
 });
 
-app.use((req, res) => {
-  res.status(404);
-  res.sendFile(path.join(__dirname, "/src-web/404.html"));
+app.use((req, res, next) => {
+  res.status(404).sendFile(__dirname + '/src-web/404.html');
 });
+
 
 app.listen(port, (err) => {
   if (err) {
