@@ -65,6 +65,7 @@ async function postData(e) {
   } else {
     toast("Form submission error.", "danger");
   }
+  document.getElementById("contact-form").reset();
   bootstrap.Modal.getInstance(document.getElementById("chatForm")).hide();
 }
 
@@ -89,6 +90,7 @@ async function postBug(e) {
   } else {
     toast("Report submission error.", "danger");
   }
+  document.getElementById("contact-form2").reset();
   bootstrap.Modal.getInstance(document.getElementById("bugForm")).hide();
 }
 
