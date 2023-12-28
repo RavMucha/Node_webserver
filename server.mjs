@@ -15,8 +15,6 @@ const app = express();
 const port = 1987;
 app.use(express.json());
 
-
-
 // app.post("/api", async (req, res) => {
 //   const data = req.body; // Get the data from the request body
 //   try {
@@ -29,9 +27,11 @@ app.use(express.json());
 //   }
 // });
 app.post("/api", async (request, response) => {
-
-  axios.post("http://127.0.0.1:8090/api/collections/Messages/records", request.body);
-  response.json({"status": "ok"});
+  axios.post(
+    "http://127.0.0.1:8090/api/collections/Messages/records",
+    request.body
+  );
+  response.json({ status: "ok" });
   // await pb
   //   .collection("Messages")
   //   .create(req.body)
@@ -45,15 +45,13 @@ app.post("/api", async (request, response) => {
   //   });
 });
 
-app.use((req, res, next) => {
-  res.status(404).sendFile(__dirname + '/src-web/404.html');
-});
-
-
 app.listen(port, (err) => {
   if (err) {
     console.log(`Operation ended with an error: ${err}`);
   } else {
     console.log(`Application listening  on port ${port}`);
   }
+});
+app.use((req, res, next) => {
+  res.status(404).sendFile(__dirname + "/src-web/404.html");
 });
