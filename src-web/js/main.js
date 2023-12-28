@@ -52,15 +52,6 @@ async function postData(e) {
       message: messageInput.value,
     }),
   });
-  console.log(
-    JSON.stringify({
-      name: nameInput.value,
-      email: emailInput.value,
-      subject: subjectInput.value,
-      message: messageInput.value,
-    })
-  );
-  console.log(res);
   const data = res.json();
   if (res.status === 200) {
     console.log(data);

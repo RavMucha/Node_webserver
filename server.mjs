@@ -3,18 +3,21 @@ import express from "express";
 import PocketBase from "pocketbase";
 import path from "path";
 import { fileURLToPath } from "url";
+import axios from "axios";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const pb = new PocketBase("http://127.0.0.1:8090");
+const authData = await pb.admins
+  .authWithPassword("admin@agh.edu.pl", "admin@agh.edu.pl")
+  .then((response) => console.log(response));
 const app = express();
-
 const port = 1987;
+app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "/src-web")));
-app.use(express.json());
 app.use((req, res) => {
-  res.status(400);
+  res.status(404);
   res.sendFile(path.join(__dirname, "/src-web/404.html"));
 });
 app.listen(port, (err) => {
@@ -25,17 +28,28 @@ app.listen(port, (err) => {
   }
 });
 
-app.post("/api/:data", (req, res) => {
-  const { data } = req.params;
-  if (res.status(200)) {
-    console.log(req.body);
-  }
-});
-
-app.get("/api", (req, res) => {
-  if (res.status(200)) {
-    res.sendFile(path.join(__dirname, "/src-web/Form_received.html"));
-  } else {
-    res.sendFile(path.join(__dirname, "/src-web/Form_err.html"));
-  }
+// app.post("/api", async (req, res) => {
+//   const data = req.body; // Get the data from the request body
+//   try {
+//     const response = await pb.collection("Messages").create(data);
+//     console.log("Data inserted successfully:", response);
+//     res.sendStatus(200);
+//   } catch (error) {
+//     console.error("Error inserting data:", error);
+//     res.sendStatus(500);
+//   }
+// });
+app.post("/api", async (data) => {
+  axios.post("http://127.0.0.1:8090/api/collections/Messages/records", data);
+  // await pb
+  //   .collection("Messages")
+  //   .create(req.body)
+  //   .then((response) => {
+  //     console.log("Data inserted successfully:", response);
+  //     res.sendStatus(200);
+  //   })
+  //   .catch((error) => {
+  //     console.error("Error inserting data:", error);
+  //     res.sendStatus(500);
+  //   });
 });
