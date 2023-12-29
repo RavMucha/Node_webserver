@@ -7,9 +7,9 @@ import axios from "axios";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const pb = new PocketBase("http://127.0.0.1:8090");
-await pb.admins
-  .authWithPassword("admin@agh.edu.pl", "admin@agh.edu.pl")
-  .then((response) => console.log(response));
+// await pb.admins
+//   .authWithPassword("admin@agh.edu.pl", "admin@agh.edu.pl")
+//   .then((response) => console.log(response));
 const app = express();
 const port = 1987;
 app.use(express.json());
