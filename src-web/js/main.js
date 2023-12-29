@@ -20,7 +20,7 @@ const registerServiceWorker = async () => {
     }
   }
 };
-// registerServiceWorker();
+registerServiceWorker();
 
 //Variables
 const loader = document.getElementById("loading-container");
@@ -29,19 +29,52 @@ const image = document.getElementById("imageTag");
 const modalFrame = document.getElementById("websiteModal");
 const frame = document.getElementById("websiteModalIframe");
 const anchor = document.getElementById("websiteModalAnchor");
-const submitForm = document.getElementById("form_submit");
-const submitBug = document.getElementById("bug_submit");
-const bugForm = document.getElementById("bug_submit");
 const alertToast = document.getElementById("liveAlert");
+const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,4}$/;
+// Contact elements
+const contactForm = document.getElementById("contact-form");
+const submitForm = document.getElementById("form_submit");
+const chatForm = document.getElementById("chatForm");
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const subjectInput = document.getElementById("subject");
 const messageInput = document.getElementById("message");
-const emailBugInput = document.getElementById("email2");
+const contactWarning = document.getElementById("contact_warning");
+//Bug report elements
+const reportForm = document.getElementById("report-form");
+const submitBug = document.getElementById("bug_submit");
+const bugForm = document.getElementById("bugForm");
+const emailBugInput = document.getElementById("email_report");
 const reportBugInput = document.getElementById("report");
+const bugWarning = document.getElementById("bug_warning");
 
-submitForm.addEventListener("click", postData);
-submitBug.addEventListener("click", postBug);
+function InputValidationBug() {
+  if (
+    reportBugInput.value.length > 0 &&
+    emailBugInput.value.match(emailPattern)
+  ) {
+    bugWarning.style.display = "none";
+    submitBug.classList.remove("disabled");
+  } else {
+    bugWarning.style.display = "block";
+    submitBug.classList.add("disabled");
+  }
+}
+
+function InputValidationContact() {
+  if (
+    nameInput.value.length > 0 &&
+    subjectInput.value.length > 0 &&
+    messageInput.value.length > 0 &&
+    emailInput.value.match(emailPattern)
+  ) {
+    contactWarning.style.display = "none";
+    submitForm.classList.remove("disabled");
+  } else {
+    contactWarning.style.display = "block";
+    submitForm.classList.add("disabled");
+  }
+}
 
 async function postData(e) {
   e.preventDefault();
@@ -65,8 +98,9 @@ async function postData(e) {
   } else {
     toast("Form submission error.", "danger");
   }
-  document.getElementById("contact-form").reset();
-  bootstrap.Modal.getInstance(document.getElementById("chatForm")).hide();
+  contactForm.reset();
+  submitForm.classList.add("disabled");
+  bootstrap.Modal.getInstance(chatForm).hide();
 }
 
 async function postBug(e) {
@@ -90,8 +124,9 @@ async function postBug(e) {
   } else {
     toast("Report submission error.", "danger");
   }
-  document.getElementById("contact-form2").reset();
-  bootstrap.Modal.getInstance(document.getElementById("bugForm")).hide();
+  reportForm.reset();
+  submitBug.classList.add("disabled");
+  bootstrap.Modal.getInstance(bugForm).hide();
 }
 
 const toast = (message, type) => {
@@ -197,10 +232,12 @@ document.getElementById("alert_closer").addEventListener("click", () => {
 });
 //Clear forms
 document.getElementById("form_clearer").addEventListener("click", () => {
-  document.getElementById("contact-form").reset();
+  contactForm.reset();
+  InputValidationContact();
 });
 document.getElementById("form_clearer2").addEventListener("click", () => {
-  document.getElementById("contact-form2").reset();
+  reportForm.reset();
+  InputValidationBug();
 });
 //Dark/light mode switch
 document.getElementById("darkMode").addEventListener("click", function () {
@@ -211,5 +248,13 @@ document.getElementById("lightMode").addEventListener("click", function () {
   playSound("../media/saberOff.mp3");
   lightModeSwitch();
 });
-//On scroll pic changer
+//Other Listeners
 window.addEventListener("scroll", AvatarChangeOnScroll);
+emailBugInput.addEventListener("keyup", InputValidationBug);
+reportBugInput.addEventListener("keyup", InputValidationBug);
+submitForm.addEventListener("click", postData);
+nameInput.addEventListener("keyup", InputValidationContact);
+emailInput.addEventListener("keyup", InputValidationContact);
+subjectInput.addEventListener("keyup", InputValidationContact);
+messageInput.addEventListener("keyup", InputValidationContact);
+submitBug.addEventListener("click", postBug);

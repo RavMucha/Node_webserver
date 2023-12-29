@@ -100,6 +100,13 @@
         </div>
         <div class="modal-body">
           <div class="row">
+            <div class="col-md-12">
+              <div id="contact_warning" class="alert alert-warning" role="alert">
+                To submit, please enter your email address in a valid format and fill out all other fields.
+              </div>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-md-12 mb-md-3 mb-sm-2 mb-xs-2">
               <form id="contact-form" name="contact-form">
                 <div class="row">
@@ -115,7 +122,8 @@
                     <div class="md-form mb-3">
                       <label for="email" class="formLabel">your email</label>
                       <input type="email" id="email" name="email" class="form-control chatInput"
-                        placeholder="elon@tesla.com" autocomplete="email" required>
+                        placeholder="elon@tesla.com" autocomplete="email" title="Should be in a valid e-mail format"
+                        required>
 
                     </div>
                   </div>
@@ -142,7 +150,7 @@
                 </div>
                 <div class="text-end">
                   <input id="form_clearer" type="button" value="CLEAR &#10006;" class="btn btn-secondary me-2" />
-                  <input id="form_submit" type="submit" value="SEND &#10132;" class="btn btn-success" />
+                  <input id="form_submit" type="submit" value="SEND &#10132;" class="btn btn-success disabled" />
                 </div>
               </form>
             </div>
@@ -163,20 +171,28 @@
         </div>
         <div class="modal-body">
           <div class="row">
+            <div class="col-md-12">
+              <div id="bug_warning" class="alert alert-warning" role="alert">
+                To submit, please enter your email address in a valid format and fill out all other fields.
+              </div>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-md-12 mb-md-3 mb-sm-2 mb-xs-2">
-              <form id="contact-form2" name="contact-form2" netlify>
+              <form id="report-form" name="report-form">
                 <div class="row">
                   <div class="col-md-6">
-                    <div class="md-form mb-3"><label for="subject2" class="formLabel">subject</label>
-                      <input type="text" id="subject2" name="subject2" class="form-control chatInput" value="BUG REPORT"
-                        disabled>
+                    <div class="md-form mb-3"><label for="subjectReport" class="formLabel">subject</label>
+                      <input type="text" id="subjectReport" name="subjectReport" class="form-control chatInput"
+                        value="BUG REPORT" disabled>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="md-form mb-3">
-                      <label for="email2" class="formLabel">your email</label>
-                      <input type="email" id="email2" name="email2" class="form-control chatInput"
-                        placeholder="good_guy@gmail.com" autocomplete="email" required>
+                      <label for="email_report" class="formLabel">your email</label>
+                      <input type="email" id="email_report" name="email_report" class="form-control chatInput"
+                        placeholder="good_guy@gmail.com" title="Should be in a valid e-mail format" autocomplete="email"
+                        required>
                     </div>
                   </div>
                 </div>
@@ -192,7 +208,7 @@
                 </div>
                 <div class="text-end">
                   <input id="form_clearer2" type="button" value="CLEAR &#10006;" class="btn btn-secondary me-2" />
-                  <input id="bug_submit" type="submit" value="REPORT &#10132;" class="btn btn-warning" />
+                  <input id="bug_submit" type="submit" value="REPORT &#10132;" class="btn btn-warning disabled" />
                 </div>
               </form>
             </div>
@@ -481,7 +497,8 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Continuous Improvement Leader <span class="badge bg-secondary">Web Developer</span></h3>
+              <h3 class="mb-0">Continuous Improvement Leader <span class="badge bg-secondary">Web Developer</span>
+              </h3>
               <h4 class="mb-0 secHeading">Acting CI Leader till July
                 2019</h4>
               <div class="subheading mb-3">
@@ -546,7 +563,8 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Command Center Senior Analyst <span class="badge bg-secondary">Web Developer</span></h3>
+              <h3 class="mb-0">Command Center Senior Analyst <span class="badge bg-secondary">Web Developer</span>
+              </h3>
               <div class="subheading mb-3">
                 <img src="img/01.png" alt="company logo" class="flav_icon" /> Capgemini Polska Sp. z o.o.
               </div>
