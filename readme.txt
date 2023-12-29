@@ -1,6 +1,6 @@
 Do działania wymagany jest zainstalowany Node.js z https://nodejs.org/en - jeśli nie ma go na komputerze.
 
-Aby uruchomić projekt należy w katalogu domowym za pomocą Terminala:
+Aby uruchomić projekt należy w katalogu domowym za pomocą Terminala wykonać:
     1. npm install
         - instaluje potrzebne moduły Node.js
 	2 ./pocketbase serve
