@@ -1,4 +1,3 @@
-// const express = require("express");
 import express from "express";
 import PocketBase from "pocketbase";
 import path from "path";
@@ -8,7 +7,7 @@ import axios from "axios";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const pb = new PocketBase("http://127.0.0.1:8090");
-const authData = await pb.admins
+await pb.admins
   .authWithPassword("admin@agh.edu.pl", "admin@agh.edu.pl")
   .then((response) => console.log(response));
 const app = express();

@@ -91,9 +91,7 @@ async function postData(e) {
       message: messageInput.value,
     }),
   });
-  const data = res.json();
   if (res.status === 200) {
-    console.log(data);
     toast("Your form is sent!", "success");
   } else {
     toast("Form submission error.", "danger");
@@ -117,9 +115,7 @@ async function postBug(e) {
       report: reportBugInput.value,
     }),
   });
-  const data = res.json();
   if (res.status === 200) {
-    console.log(data);
     toast("Your report is sent!", "success");
   } else {
     toast("Report submission error.", "danger");
