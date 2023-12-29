@@ -573,12 +573,6 @@ div img.flav_icon {
   margin-bottom: 4px;
   margin-right: 3px;
 }
-.modal_close_modifirer {
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  z-index: 100;
-}
 .bio {
   width: 75%;
 }
