@@ -96,9 +96,10 @@ async function postData(e) {
   } else {
     toast("Form submission error.", "danger");
   }
+  bootstrap.Modal.getInstance(chatForm).hide();
   contactForm.reset();
   submitForm.classList.add("disabled");
-  bootstrap.Modal.getInstance(chatForm).hide();
+  contactWarning.style.display = "block";
 }
 
 async function postBug(e) {
@@ -120,9 +121,10 @@ async function postBug(e) {
   } else {
     toast("Report submission error.", "danger");
   }
+  bootstrap.Modal.getInstance(bugForm).hide();
   reportForm.reset();
   submitBug.classList.add("disabled");
-  bootstrap.Modal.getInstance(bugForm).hide();
+  bugWarning.style.display = "block";
 }
 
 const toast = (message, type) => {
